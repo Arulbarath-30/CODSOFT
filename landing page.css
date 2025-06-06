@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #07ee07;
+  color: black;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #09bbf1;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+  margin-left: 20px;
+}
+
+header nav {
+  float: right;
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #09bbf1;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hero Section */
+.hero {
+  background:#4f0ccc;
+  color:aqua;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: whitesmoke;
+  color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  text-align: center;
+  background-color: white;
+}
+
+.feature-box {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: red;
+}
+
+/* Footer */
+footer {
+  background: #ccc;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1, header nav {
+    float: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+}
